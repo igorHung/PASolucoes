@@ -26,4 +26,4 @@
 /FrontEndPaSolucoes/.env.production.local
 
 # build
-package.json
+.package.json
