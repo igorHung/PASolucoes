@@ -23,3 +23,6 @@
 /FrontEndPaSolucoes/.env.development.local
 /FrontEndPaSolucoes/.env.test.local
 /FrontEndPaSolucoes/.env.production.local
+
+
+#package.json
