@@ -12,8 +12,7 @@ server.use(bodyParser.urlencoded({ extended: true }));
 server.use(express.urlencoded({ extended: true }));
 server.use(express.json());
 
-const PORT = process.env.PORT || 3102;
-process.env.backEndPORT = PORT
+const PORT =  3102;
 
 getRoutes.get("/",(req,res)=>{
     res.status(200).send([{ sucess: true, milton:"alo" }])
