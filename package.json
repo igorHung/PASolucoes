@@ -3,10 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build":"docker build -t pacaontainerv1 .",
-    "cbuild": "heroku container:push web -a nameless-mountain-33768",
-    "cdeploy": "heroku container:release web -a nameless-mountain-33768",
-    "cbd": "heroku container:push web -a nameless-mountain-33768 && heroku container:release web -a nameless-mountain-33768",
-    "logs": "heroku logs --tail -a nameless-mountain-33768 "
+    "server": "sh start.sh"
   }
 }
