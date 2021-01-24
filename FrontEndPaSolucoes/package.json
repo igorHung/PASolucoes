@@ -6,11 +6,7 @@
     "dev": "next dev",
     "test":"",
     "build": "next build",
-    "start": "next start -p 3103",
-    "cbuild": "heroku container:push web",
-    "cdeploy": "heroku container:release web",
-    "cbd": "heroku container:push web && heroku container:release web",
-    "logs": "heroku logs --tail"
+    "start": "next start -p 80"
   },
   "dependencies": {
     "bootstrap": "^4.5.3",
