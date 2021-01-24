@@ -1,18 +1,20 @@
 #!/bin/bash
-pkill -f tmux
-pkill -f node
+bash pkill -f tmux
+bash pkill -f node
 cd /root/app/BackEndPaSolucoes
-git stash
-git stash clear
-git pull origin master
+bash git stash
+bash git stash clear
+bash git pull origin master
 
 echo initializing dependencies
--c 'cd /root/app/BackEndPaSolucoes && npm install  \
+tmux new-session -d -s FrontBack 'cd /root/app/BackEndPaSolucoes && npm install  \
     cd /root/app/FrontEndPaSolucoes && npm install '
+sleep 8
 echo building Front
--c 'cd /root/app/FrontEndPaSolucoes && npm run build '
+tmux new-session -d -s FrontBack 'cd /root/app/FrontEndPaSolucoes && npm run build '
+sleep 20
 echo Starting Services
--c 'cd /root/app/BackEndPaSolucoes && npm start &\
+tmux new-session -d -s FrontBack 'cd /root/app/BackEndPaSolucoes && npm start &\
     cd /root/app/FrontEndPaSolucoes && npm start '
 
 echo Services started
