@@ -1,6 +1,6 @@
 #!/bin/bash
-bash pkill -f tmux
-bash pkill -f node
+pkill -f tmux
+pkill -f node
 
 echo Starting Services
 tmux new-session -d -s FrontBack 'cd /root/app/BackEndPaSolucoes && npm start &\
