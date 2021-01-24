@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "server": "sh start.sh"
+    "start": "sh start.sh",
+    "build": "sh build.sh"
   }
 }
