@@ -9,25 +9,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="title">
-          Iniciando FrontEnd do projeto,terminado configuração do ambiente
-        </h1>
-        <p className="description">
-          Se for querer partipar da uma pesquisada sobre <br/>
-
-        </p>   
-        <p className="avisostemporarios">
-          #<a href="https://www.google.com/search?client=firefox-b-d&q=comandos+basicos+de+linux+windows+e+node" target="_blank">comandos basicos de terminal do linux e windows e comandos de node etc</a><br/>
-          #<a href="https://www.google.com/search?client=firefox-b-d&q=docker+" target="_blank">docker , como montar dockerfile, como fazer deploy da img *OBS:este projeto ta rodando em docker e a imagem ta sendo hosperada no heroku</a><br/>
-          #<a href="https://www.google.com/search?client=firefox-b-d&q=next+js" target="_blank">next.js pro frontend </a><br/>
-          #<a href="https://blog.rocketseat.com.br/nodejs-express-sequelize/" target="_blank">Node, express ,sequelize e mais umas coisas pro backend </a><br/>
-          #<a href="https://github.com/erick-lucio/NextFrontEnd" target="_blank">Este projeto ta no repositorio</a><br/>
-          #<a href="https://www.google.com/search?client=firefox-b-d&sxsrf=ALeKk03TeoZboR3Hznbwf9lAh_YewYpgjw%3A1608448510810&ei=_vneX4eDMdSN0AazpY3wBg&q=sass+ou+reactstrap+ou+bootstrap&oq=sass+ou+reactstrap+ou+bootstrap&gs_lcp=CgZwc3ktYWIQAzoECAAQRzoECCMQJzoICAAQCBANEB5Q5CtY2lFgvlRoAHACeACAAXeIAfcGkgEDMC44mAEAoAEBqgEHZ3dzLXdpesgBCMABAQ&sclient=psy-ab&ved=0ahUKEwiH-oDRgdztAhXUBtQKHbNSA24Q4dUDCAw&uact=5" target="_blank">Ainda n determinei como vou fazer a estilização do css to pensando em reactstrap ou bootrap ou sass</a><br/>
-          ###Se for querer participar te ajudo, vo ta usando slack p organizar as tasks<br/>
-          <a href="/cuzim" target="_blank">milton 1</a><br/>
-          <a href="/asas/MiltonCudelinguica" target="_blank">milton 2</a><br/>
-        </p>     
-
+        <h1>MILTON-</h1>
 
         <div className="grid">
           <a href="https://nextjs.org/docs" className="card">
