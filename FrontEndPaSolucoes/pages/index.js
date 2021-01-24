@@ -9,7 +9,8 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>MILTON-</h1>
+        <h1>Yasmim</h1>
+        <h1>Dami</h1>
 
         <div className="grid">
           <a href="https://nextjs.org/docs" className="card">

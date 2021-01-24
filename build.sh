@@ -9,10 +9,10 @@ git pull origin master
 echo initializing dependencies
 tmux new-session -d -s installDependencies 'cd /root/app/BackEndPaSolucoes && npm install  \
     cd /root/app/FrontEndPaSolucoes && npm install '
-sleep 8
+sleep 10
 echo building Front
 tmux new-session -d -s buildingFront 'cd /root/app/FrontEndPaSolucoes && npm run build '
-sleep 20
+sleep 25
 echo Starting Services
 tmux new-session -d -s FrontBack 'cd /root/app/BackEndPaSolucoes && npm start &\
     cd /root/app/FrontEndPaSolucoes && npm start '
