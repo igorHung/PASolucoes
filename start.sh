@@ -1,4 +1,6 @@
-
+pkill -f "node"
+git stash
+git pull origin master
 echo initializing dependencies
 bash -c 'cd /root/app/BackEndPaSolucoes && npm install  \
     cd /root/app/FrontEndPaSolucoes && npm install '

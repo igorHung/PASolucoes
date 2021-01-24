@@ -3,6 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "server": "pkill -f 'node' && git stash && git pull origin master && sh start.sh"
+    "server": "sh start.sh"
   }
 }
