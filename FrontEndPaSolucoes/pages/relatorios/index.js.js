@@ -1,45 +1,19 @@
 import Head from 'next/head'
 
-export default function Index() {
-  
+export default function Home() {
   return (
     <div className="container">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      
       <main>
-        <h3>Miltao</h3>
-        <h1 className="title">
-          Ola, Seja bem vindo !
-        </h1><br/>
-        <form>
-          <h3>Filtros</h3>
-          <span>funcionarios</span>
-          <select name="cars" id="cars">
-            <option value="todos">todos</option>
-            <option value="douglas">douglas</option>
-            <option value="igor">igor</option>
-            <option value="mateus">mateus</option>
-            <option value="caua">caua</option>
-          </select>
-        </form>
+        <h1>tela cadastro de clientes</h1>
 
-        <p className="description">
-          <span>Login</span>
-          <input placeholder="Digite seu login">
-
-          </input>
-          <span>Senha</span>
-          <input placeholder="Digite sua senha">
-
-          </input>
-        </p>
-
-        <a href="/home">ir para home</a>
       </main>
 
+      
       <style jsx>{`
         .container {
           min-height: 100vh;
