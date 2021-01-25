@@ -4,34 +4,17 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Projeto PA</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1 className="title">
-          Milton Chupador de Pica
-        </h1>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-
+      <main>          
+          <span>Digite o cnpj :</span>
+          <input placeholder="CNPJ"></input>
       </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
-
-      <style jsx>{`
+      <a href="/cadastros/funcionarios">cadastro funcionarios</a>
+      <a href="/cadastros/clientes">cadastro clientes</a>
+       <style jsx>{`
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
@@ -40,7 +23,15 @@ export default function Home() {
           justify-content: center;
           align-items: center;
         }
-
+        .avisostemporarios{
+          line-height: 1.5;
+          font-size: 1.2rem;
+          text-align:left;
+          width:80%
+        }
+        .avisostemporarios a :hover{
+          color:blue;
+        }
         main {
           padding: 5rem 0;
           flex: 1;

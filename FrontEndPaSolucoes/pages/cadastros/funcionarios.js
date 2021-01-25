@@ -1,7 +1,6 @@
 import Head from 'next/head'
 
-export default function Index() {
-  
+export default function Home() {
   return (
     <div className="container">
       <Head>
@@ -10,23 +9,11 @@ export default function Index() {
       </Head>
 
       <main>
-        <h1 className="title">
-          Ola, Seja bem vindo !
-        </h1>
+        <h1>tela cadastro de funcionarios</h1>
 
-        <p className="description">
-          <span>Login</span>
-          <input placeholder="Digite seu login">
-
-          </input>
-          <span>Senha</span>
-          <input placeholder="Digite sua senha">
-
-          </input>
-        </p>
-
-        <a href="/home">ir para home</a>
       </main>
+
+
 
       <style jsx>{`
         .container {
