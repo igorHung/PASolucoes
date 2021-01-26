@@ -1,14 +1,16 @@
 import Head from 'next/head'
 
 export default function Index() {
-  
+  function name(){
+    
+  }
   return (
     <div className="container">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      
       <main>
         <h3>Miltao</h3>
         <h1 className="title">

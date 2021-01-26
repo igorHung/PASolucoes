@@ -5,12 +5,7 @@ const server = express();
 const helmet = require("helmet");
 const getRoutes = express.Router();
 
-if(process.env.NODE_ENV_Pa == "production"){
-    const dbConnection = require('./src/database/connectionProd')
-}
-if(process.env.NODE_ENV_Pa == "development"){
-    const dbConnection = require('./src/database/connectionDev')
-}
+const dbConnection = require('../database/connectionProd')
 
 server.use(bodyParser.json());
 server.use(cors());
