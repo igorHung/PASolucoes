@@ -27,7 +27,7 @@ connection.invokeQuery = function(sqlQuery,data){
         } 
         if(err){                  
             console.log(err)
-            handleMySQLError(err)
+            
         } 
     })
            

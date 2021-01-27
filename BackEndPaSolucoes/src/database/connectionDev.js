@@ -30,7 +30,7 @@ connection.invokeQuery = function(sqlQuery,data){
            function(err,stream){           
                if (err){      
                     console.log(err)
-                    handleSSHError(err)
+                    
                }
                dbConfig.mySQLConfig.stream = stream
 
@@ -43,7 +43,7 @@ connection.invokeQuery = function(sqlQuery,data){
                    } 
                    if(err){                  
                         console.log(err)
-                        handleMySQLError(err)
+                        
                     } 
                })
            } 
