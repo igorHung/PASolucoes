@@ -3,11 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "startAll": "sh scripts/startAll.sh",
-    "startFront": "sh scripts/startFront.sh",
-    "startBack": "sh scripts/startBack.sh",
-    "depend": "sh scripts/installDependencies.sh",
-    "buildFront": "sh scripts/buildFront.sh",
-    "buildAll": "sh scripts/buildAll.sh"
+    "start": "sh start.sh",
+    "build": "sh build.sh",
+    "test":"./"
   }
 }
