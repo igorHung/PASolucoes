@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/scripts/prod.js",
-    "dev": "nodemon src/scripts/dev.js"
+    "start": "cross-env NODE_ENV=prod node src/scripts/prod.js",
+    "dev": "cross-env NODE_ENV=dev nodemon src/scripts/dev.js"
   },
   "author": "erick lucio",
   "license": "ISC",
@@ -14,9 +14,11 @@
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "cross-env": "^7.0.3",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "helmet": "^4.3.1",
     "mysql2": "^2.2.5",
+    "path": "^0.12.7",
     "ssh2": "^0.8.9"
   },
   "devDependencies": {
