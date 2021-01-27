@@ -3,13 +3,7 @@ const Routes = express.Router()
 const dbConnection = require("../../database/exportConnection")
 const userRoutes = express.Router();
 
-userRoutes.get("/time",(req,res)=>{    
-    var querytest = "select @@timezone"
-        dbConnection.invokeQuery(querytest,function(rows){
-            res.status(200).send([rows])
-        })
-    }
-),
+
 userRoutes.get("/banco",(req,res)=>{    
     var querytest = "select * from funcionarios"
         dbConnection.invokeQuery(querytest,function(rows){
