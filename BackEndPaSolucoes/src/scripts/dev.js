@@ -5,7 +5,8 @@ const server = express();
 const helmet = require("helmet");
 const Routes = require('../Routes/index')
 process.env.dbConnection = "connectionDev"
-
+var hoje = new Date()
+console.log(hoje.toISOString())
 
 server.use(bodyParser.json());
 server.use(cors());
