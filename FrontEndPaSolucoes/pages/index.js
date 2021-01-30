@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import React, { useState } from 'react';
-import {Container,WelcomeDiv,LoginDiv,Text,DefaultInput,DefaultButton} from './indexStyles'
+import {Container,WelcomeDiv,LoginDiv,Text,DefaultInput,DefaultButton} from '../assets/styles/index'
 
 //
 import BackGroundImg from '../assets/imgs/MainPageLosango.png'

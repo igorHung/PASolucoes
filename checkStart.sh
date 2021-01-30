@@ -4,14 +4,6 @@ do
     sessionBack="BackEnd"
     sessionBuilding="buildingFront"
     sessionInstalling="installDependencies"
-	tmux has-session -t $sessionBuilding 2>/dev/null
-    if [ $? == 0 ]; then
-		sleep 65
-	fi
-	tmux has-session -t $sessionInstalling 2>/dev/null
-    if [ $? == 0 ]; then
-		sleep 65
-	fi
     # Check if the session exists, discarding output
     # We can check $? for the exit status (zero for success, non-zero for failure)
     tmux has-session -t $sessionBuilding 2>/dev/null
@@ -32,7 +24,7 @@ do
 	
 
 	
-	sleep 10
+	sleep 35
 done
 
 
