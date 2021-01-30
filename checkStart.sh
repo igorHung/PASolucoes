@@ -21,9 +21,17 @@ do
             fi
         fi
     fi
-
-    
-	sleep 65
+	
+	tmux has-session -t $sessionBuilding 2>/dev/null
+    if [ $? -eq 0 ]; then
+		sleep 65
+	fi
+	tmux has-session -t $sessionInstalling 2>/dev/null
+    if [ $? -eq 0 ]; then
+		sleep 65
+	fi
+	
+	sleep 10
 done
 
 
