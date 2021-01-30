@@ -23,7 +23,7 @@ do
     fi
 
     
-	sleep 10
+	sleep 65
 done
 
 
