@@ -8,7 +8,7 @@ module.exports = {
         user : 'app',
         password : 'AppPassWd789612',
         database : 'PaSolucoes',
-        timeout : 24000
+        timeout : 10000
     },
     sshConfig : {
         host: '165.22.45.215',

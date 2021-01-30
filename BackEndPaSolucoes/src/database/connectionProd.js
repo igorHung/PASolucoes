@@ -14,23 +14,26 @@ createDBConnection = function(){
     return mysqlConnection
 }
 
-connection.invokeQuery = function(sqlQuery,data){
-    dbConfig.localhost,
-    dbConfig.mySQLConfig.timeout,
-    dbConfig.localhost,
-    dbConfig.mySQLConfig.port
-        
-    const db = mysql.createConnection(dbConfig.mySQLConfig)        
-    db.query(sqlQuery, function(err,rows){
-        if(rows){                   
-        data(rows)
-        } 
-        if(err){                  
-            console.log(err)
-            handleMySQLError(err)
-        } 
-    })
-           
-        
-   
+try {
+    connection.invokeQuery = function(sqlQuery,data){
+        dbConfig.localhost,
+        dbConfig.mySQLConfig.timeout,
+        dbConfig.localhost,
+        dbConfig.mySQLConfig.port
+            
+        const db = mysql.createConnection(dbConfig.mySQLConfig)        
+        db.query(sqlQuery, function(err,rows){
+            if(rows){                   
+            data(rows)
+            } 
+            if(err){                  
+                console.log(err)
+            } 
+        })
+               
+            
+       
+    }
+} catch (error) {
+   console.log(error) 
 }

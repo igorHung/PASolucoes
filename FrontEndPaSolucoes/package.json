@@ -9,8 +9,11 @@
     "start": "next start -p 80"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "next": "^10.0.0",
+    "next-images": "^1.7.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.2.1"
   }
 }
