@@ -17,16 +17,25 @@ module.exports = {
         })
     },
     async getAllUsers(req,res){
-        
-        
-        var sqlQuery = "SELECT * FROM funcionarios where login = 5"
+        var sqlQuery = "SELECT * FROM funcionarios where"
         dbConnection.invokeQuery(sqlQuery,(rows)=>{
             var response = {                
-                errorMessage:rows.length > 0?"":"Nenhum usuario Encontrado",
+                errorMessage:rows.length > 0 ? "":"Nenhum usuario Encontrado",
                 dados:rows.length > 0?rows:""
             }
             res.status(200).send(response)
         })
+    },
+    async updateUserById(req,res){
+
+    },
+    async createUser(req,res){
+
+    },
+    async deleteUser(req,res){
+
     }
+
+
 
 }
