@@ -10,8 +10,7 @@ body {
 .main{
     margin: 0;
     padding: 0;
-    background-image: url(../imgs/bgcd.jpg);
-    background-color: #ff4d4d;
+    background-image: url(../imgs/bgcd.jpg);    
     background-size: cover;
     font-family: "Comfortaa", sans-serif;
     height: 100vh;
