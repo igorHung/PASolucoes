@@ -17,7 +17,7 @@ module.exports = {
         })
     },
     async getAllUsers(req,res){
-        var sqlQuery = "SELECT * FROM funcionarios where"
+        var sqlQuery = "SELECT * FROM funcionarios"
         dbConnection.invokeQuery(sqlQuery,(rows)=>{
             var response = {                
                 errorMessage:rows.length > 0 ? "":"Nenhum usuario Encontrado",
