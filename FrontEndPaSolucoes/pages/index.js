@@ -37,8 +37,7 @@ export default function Index(props) {
             <p>Senha</p>
             <input type="password" name="" placeholder="Insira sua senha"></input>
             <input type="submit" name="" value="Login"></input>
-            <a href="#">Esqueceu sua senha?</a><br/>
-            <a href="#">Ainda não possui uma conta?</a>
+            <a href="#">Esqueceu sua senha?</a><br/>            
 
         </form>
     </div>
