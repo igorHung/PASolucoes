@@ -2,21 +2,33 @@ const express = require("express");
 const Routes = express.Router()
 const userRoutes = express.Router();
 const UserControler = require("../../Controlers/users")
+const AuthSecurity = require("../../Security/auth")
+const defaultResponse = require('../../Controlers/formatResponse')
 
 userRoutes.get("/users/usersAll",  
-    UserControler.getAllUsers  
+    AuthSecurity.verifyJWT,
+    UserControler.getAllUsers,
+    defaultResponse.defaultResponse
 ),
-userRoutes.post("/users/user",
-    UserControler.getUserByLoginAndPass
+userRoutes.get("/users/user",
+    UserControler.getUserByLoginAndPass,
+    AuthSecurity.createJWT,
+    defaultResponse.defaultResponse
 )
 userRoutes.post("/users/updateuser",
-    UserControler.updateUserById
+    AuthSecurity.verifyJWT,
+    UserControler.updateUserById,
+    defaultResponse.defaultResponse
 )
 userRoutes.post("/users/createuser",
-    UserControler.createUser
+    AuthSecurity.verifyJWT,
+    UserControler.createUser,
+    defaultResponse.defaultResponse
 )
 userRoutes.post("/users/deleteuser",
-    UserControler.deleteUser
+    AuthSecurity.verifyJWT,
+    UserControler.deleteUser,
+    defaultResponse.defaultResponse
 )
 
 module.exports = userRoutes ;

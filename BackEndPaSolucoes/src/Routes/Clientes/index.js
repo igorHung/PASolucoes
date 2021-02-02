@@ -2,21 +2,33 @@ const express = require("express");
 const Routes = express.Router()
 const clientesRoutes = express.Router();
 const ClientesControler = require("../../Controlers/clientes")
+const AuthSecurity = require("../../Security/auth")
+const defaultResponse = require('../../Controlers/formatResponse')
 
 clientesRoutes.get("/clientes/clientesAll",  
-    ClientesControler.getAllClientes 
+    AuthSecurity.verifyJWT,
+    ClientesControler.getAllClientes ,
+    defaultResponse.defaultResponse
 ),
 clientesRoutes.post("/clientes/cliente",
-    ClientesControler.getClienteById
+    AuthSecurity.verifyJWT,
+    ClientesControler.getClienteById,
+    defaultResponse.defaultResponse
 )
 clientesRoutes.post("/clientes/updatecliente",
-    ClientesControler.updateCliente
+    AuthSecurity.verifyJWT,
+    ClientesControler.updateCliente,
+    defaultResponse.defaultResponse
 )
 clientesRoutes.post("/clientes/createcliente",
-    ClientesControler.createCliente
+    AuthSecurity.verifyJWT,
+    ClientesControler.createCliente,
+    defaultResponse.defaultResponse
 )
 clientesRoutes.post("/clientes/deletecliente",
-    ClientesControler.deleteCliente
+    AuthSecurity.verifyJWT,
+    ClientesControler.deleteCliente,
+    defaultResponse.defaultResponse
 )
 
 module.exports = clientesRoutes ;
